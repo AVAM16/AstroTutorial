@@ -1,5 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
+
+const pageTitle = "Home Page";
 ---
 
 <html lang="en">
@@ -8,13 +12,12 @@ import '../styles/global.css';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-    <h1>Astro Website</h1>
+    <Navigation />
+    <h1>{pageTitle}</h1>
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AVAM16&hide_progress=true" alt="Top Langs">
+    <Footer />
   </body>
 </html>
