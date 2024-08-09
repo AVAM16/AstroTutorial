@@ -13,8 +13,9 @@ const { frontmatter } = Astro.props;
       <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
     ))}
   </div>
-
-  <slot />
+  <div class="tw-prose-neutral tw-prose-lg">
+    <slot/>
+  </div>
 </BaseLayout>
 
 <style>

@@ -9,7 +9,8 @@ export default function Greeting({messages}) {
   return (
     <div>
       <h3>{greeting}! Thank you for visiting!</h3>
-      <button onClick={() => setGreeting(randomMessage())}>
+      <button class="tw-bg-slate-400 tw-text-black tw-rounded-md tw-p-2 tw-drop-shadow-md"
+        onClick={() => setGreeting(randomMessage())}>
         New Greeting
       </button>
     </div>
